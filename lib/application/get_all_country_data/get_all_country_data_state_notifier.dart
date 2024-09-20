@@ -30,10 +30,6 @@ class GetAllCountryDataStateNotifier
   Future<void> getAllValue() async {
     _logUtils.log("Get All Country Data State Notifier");
 
-    state = state.copyWith(
-      isLoading: true,
-    );
-
     final getAllCountryDataSucesOrFailure =
         await _getCountryDataRepository.getValue();
 

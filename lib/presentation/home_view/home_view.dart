@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:countryinfo/application/get_all_country_data/get_all_country_data_state_notifier_provider.dart';
 import 'package:countryinfo/presentation/common/header_part.dart';
 import 'package:countryinfo/util/constants/colors.dart';
@@ -13,14 +15,34 @@ class HomeView extends HookConsumerWidget {
     var h = MediaQuery.of(context).size.height;
     var w = MediaQuery.of(context).size.width;
 
+    // useEffect(() {
+    //   Future.delayed(Duration.zero, () {
+    //     ref.read(getAllCountryDataStateNotifierProvider.notifier).getAllValue();
+    //   });
+    //   return;
+    // }, []);
+
+    // ref.read(getAllCountryDataStateNotifierProvider.notifier).getAllValue();
+
+    // Using useEffect to set up a periodic timer to call API every 1 minute
     useEffect(() {
-      Future.delayed(Duration.zero, () {
+      // Trigger the API call initially
+      ref.read(getAllCountryDataStateNotifierProvider.notifier).getAllValue();
+
+      // Set up the periodic timer
+      Timer timer = Timer.periodic(const Duration(minutes: 1), (timer) {
         ref.read(getAllCountryDataStateNotifierProvider.notifier).getAllValue();
       });
-      return;
-    }, []);
 
-    ref.read(getAllCountryDataStateNotifierProvider.notifier).getAllValue();
+      // Dispose the timer when the widget is destroyed
+      return () {
+        timer.cancel();
+      };
+    });
+
+    Timer timer = Timer.periodic(const Duration(minutes: 1), (timer) {
+      ref.watch(getAllCountryDataStateNotifierProvider.notifier).getAllValue();
+    });
 
     //--------------------------------------------------------------------------
 
