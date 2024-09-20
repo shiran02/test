@@ -1,6 +1,6 @@
+import 'package:countryinfo/presentation/home_view/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'presentation/splash_view/splash_view.dart';
 
 /// -- user this class to setup themes, initial bindings , any animations and mush
 class App extends StatelessWidget {
@@ -11,7 +11,7 @@ class App extends StatelessWidget {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
-      home: SplashView(),
+      home: HomeView(),
     );
   }
 }

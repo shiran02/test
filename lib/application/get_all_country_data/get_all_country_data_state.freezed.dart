@@ -17,16 +17,9 @@ final _privateConstructorUsedError = UnsupportedError(
 /// @nodoc
 mixin _$GetAllCountryDataState {
   bool get isLoading => throw _privateConstructorUsedError;
-  String get sortBy => throw _privateConstructorUsedError;
-  double get heigth => throw _privateConstructorUsedError;
-  bool get isClickTouch => throw _privateConstructorUsedError;
-  bool get isSort => throw _privateConstructorUsedError;
-  int get selectOption => throw _privateConstructorUsedError;
+  int get value => throw _privateConstructorUsedError;
   Option<Failure> get responseFailure => throw _privateConstructorUsedError;
-  KtList<AllCountryData> get allCountryDataList =>
-      throw _privateConstructorUsedError;
-  KtList<AllCountryData> get allCountryDataNonSortList =>
-      throw _privateConstructorUsedError;
+  KtList<Data> get outPutList => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $GetAllCountryDataStateCopyWith<GetAllCountryDataState> get copyWith =>
@@ -41,14 +34,9 @@ abstract class $GetAllCountryDataStateCopyWith<$Res> {
   @useResult
   $Res call(
       {bool isLoading,
-      String sortBy,
-      double heigth,
-      bool isClickTouch,
-      bool isSort,
-      int selectOption,
+      int value,
       Option<Failure> responseFailure,
-      KtList<AllCountryData> allCountryDataList,
-      KtList<AllCountryData> allCountryDataNonSortList});
+      KtList<Data> outPutList});
 }
 
 /// @nodoc
@@ -66,52 +54,27 @@ class _$GetAllCountryDataStateCopyWithImpl<$Res,
   @override
   $Res call({
     Object? isLoading = null,
-    Object? sortBy = null,
-    Object? heigth = null,
-    Object? isClickTouch = null,
-    Object? isSort = null,
-    Object? selectOption = null,
+    Object? value = null,
     Object? responseFailure = null,
-    Object? allCountryDataList = null,
-    Object? allCountryDataNonSortList = null,
+    Object? outPutList = null,
   }) {
     return _then(_value.copyWith(
       isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
               as bool,
-      sortBy: null == sortBy
-          ? _value.sortBy
-          : sortBy // ignore: cast_nullable_to_non_nullable
-              as String,
-      heigth: null == heigth
-          ? _value.heigth
-          : heigth // ignore: cast_nullable_to_non_nullable
-              as double,
-      isClickTouch: null == isClickTouch
-          ? _value.isClickTouch
-          : isClickTouch // ignore: cast_nullable_to_non_nullable
-              as bool,
-      isSort: null == isSort
-          ? _value.isSort
-          : isSort // ignore: cast_nullable_to_non_nullable
-              as bool,
-      selectOption: null == selectOption
-          ? _value.selectOption
-          : selectOption // ignore: cast_nullable_to_non_nullable
+      value: null == value
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
               as int,
       responseFailure: null == responseFailure
           ? _value.responseFailure
           : responseFailure // ignore: cast_nullable_to_non_nullable
               as Option<Failure>,
-      allCountryDataList: null == allCountryDataList
-          ? _value.allCountryDataList
-          : allCountryDataList // ignore: cast_nullable_to_non_nullable
-              as KtList<AllCountryData>,
-      allCountryDataNonSortList: null == allCountryDataNonSortList
-          ? _value.allCountryDataNonSortList
-          : allCountryDataNonSortList // ignore: cast_nullable_to_non_nullable
-              as KtList<AllCountryData>,
+      outPutList: null == outPutList
+          ? _value.outPutList
+          : outPutList // ignore: cast_nullable_to_non_nullable
+              as KtList<Data>,
     ) as $Val);
   }
 }
@@ -127,14 +90,9 @@ abstract class _$$GetAllCountryDataStateImplCopyWith<$Res>
   @useResult
   $Res call(
       {bool isLoading,
-      String sortBy,
-      double heigth,
-      bool isClickTouch,
-      bool isSort,
-      int selectOption,
+      int value,
       Option<Failure> responseFailure,
-      KtList<AllCountryData> allCountryDataList,
-      KtList<AllCountryData> allCountryDataNonSortList});
+      KtList<Data> outPutList});
 }
 
 /// @nodoc
@@ -151,52 +109,27 @@ class __$$GetAllCountryDataStateImplCopyWithImpl<$Res>
   @override
   $Res call({
     Object? isLoading = null,
-    Object? sortBy = null,
-    Object? heigth = null,
-    Object? isClickTouch = null,
-    Object? isSort = null,
-    Object? selectOption = null,
+    Object? value = null,
     Object? responseFailure = null,
-    Object? allCountryDataList = null,
-    Object? allCountryDataNonSortList = null,
+    Object? outPutList = null,
   }) {
     return _then(_$GetAllCountryDataStateImpl(
       isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
               as bool,
-      sortBy: null == sortBy
-          ? _value.sortBy
-          : sortBy // ignore: cast_nullable_to_non_nullable
-              as String,
-      heigth: null == heigth
-          ? _value.heigth
-          : heigth // ignore: cast_nullable_to_non_nullable
-              as double,
-      isClickTouch: null == isClickTouch
-          ? _value.isClickTouch
-          : isClickTouch // ignore: cast_nullable_to_non_nullable
-              as bool,
-      isSort: null == isSort
-          ? _value.isSort
-          : isSort // ignore: cast_nullable_to_non_nullable
-              as bool,
-      selectOption: null == selectOption
-          ? _value.selectOption
-          : selectOption // ignore: cast_nullable_to_non_nullable
+      value: null == value
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
               as int,
       responseFailure: null == responseFailure
           ? _value.responseFailure
           : responseFailure // ignore: cast_nullable_to_non_nullable
               as Option<Failure>,
-      allCountryDataList: null == allCountryDataList
-          ? _value.allCountryDataList
-          : allCountryDataList // ignore: cast_nullable_to_non_nullable
-              as KtList<AllCountryData>,
-      allCountryDataNonSortList: null == allCountryDataNonSortList
-          ? _value.allCountryDataNonSortList
-          : allCountryDataNonSortList // ignore: cast_nullable_to_non_nullable
-              as KtList<AllCountryData>,
+      outPutList: null == outPutList
+          ? _value.outPutList
+          : outPutList // ignore: cast_nullable_to_non_nullable
+              as KtList<Data>,
     ));
   }
 }
@@ -206,37 +139,22 @@ class __$$GetAllCountryDataStateImplCopyWithImpl<$Res>
 class _$GetAllCountryDataStateImpl implements _GetAllCountryDataState {
   _$GetAllCountryDataStateImpl(
       {required this.isLoading,
-      required this.sortBy,
-      required this.heigth,
-      required this.isClickTouch,
-      required this.isSort,
-      required this.selectOption,
+      required this.value,
       required this.responseFailure,
-      required this.allCountryDataList,
-      required this.allCountryDataNonSortList});
+      required this.outPutList});
 
   @override
   final bool isLoading;
   @override
-  final String sortBy;
-  @override
-  final double heigth;
-  @override
-  final bool isClickTouch;
-  @override
-  final bool isSort;
-  @override
-  final int selectOption;
+  final int value;
   @override
   final Option<Failure> responseFailure;
   @override
-  final KtList<AllCountryData> allCountryDataList;
-  @override
-  final KtList<AllCountryData> allCountryDataNonSortList;
+  final KtList<Data> outPutList;
 
   @override
   String toString() {
-    return 'GetAllCountryDataState(isLoading: $isLoading, sortBy: $sortBy, heigth: $heigth, isClickTouch: $isClickTouch, isSort: $isSort, selectOption: $selectOption, responseFailure: $responseFailure, allCountryDataList: $allCountryDataList, allCountryDataNonSortList: $allCountryDataNonSortList)';
+    return 'GetAllCountryDataState(isLoading: $isLoading, value: $value, responseFailure: $responseFailure, outPutList: $outPutList)';
   }
 
   @override
@@ -246,34 +164,16 @@ class _$GetAllCountryDataStateImpl implements _GetAllCountryDataState {
             other is _$GetAllCountryDataStateImpl &&
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading) &&
-            (identical(other.sortBy, sortBy) || other.sortBy == sortBy) &&
-            (identical(other.heigth, heigth) || other.heigth == heigth) &&
-            (identical(other.isClickTouch, isClickTouch) ||
-                other.isClickTouch == isClickTouch) &&
-            (identical(other.isSort, isSort) || other.isSort == isSort) &&
-            (identical(other.selectOption, selectOption) ||
-                other.selectOption == selectOption) &&
+            (identical(other.value, value) || other.value == value) &&
             (identical(other.responseFailure, responseFailure) ||
                 other.responseFailure == responseFailure) &&
-            (identical(other.allCountryDataList, allCountryDataList) ||
-                other.allCountryDataList == allCountryDataList) &&
-            (identical(other.allCountryDataNonSortList,
-                    allCountryDataNonSortList) ||
-                other.allCountryDataNonSortList == allCountryDataNonSortList));
+            (identical(other.outPutList, outPutList) ||
+                other.outPutList == outPutList));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      isLoading,
-      sortBy,
-      heigth,
-      isClickTouch,
-      isSort,
-      selectOption,
-      responseFailure,
-      allCountryDataList,
-      allCountryDataNonSortList);
+  int get hashCode =>
+      Object.hash(runtimeType, isLoading, value, responseFailure, outPutList);
 
   @JsonKey(ignore: true)
   @override
@@ -285,35 +185,19 @@ class _$GetAllCountryDataStateImpl implements _GetAllCountryDataState {
 
 abstract class _GetAllCountryDataState implements GetAllCountryDataState {
   factory _GetAllCountryDataState(
-          {required final bool isLoading,
-          required final String sortBy,
-          required final double heigth,
-          required final bool isClickTouch,
-          required final bool isSort,
-          required final int selectOption,
-          required final Option<Failure> responseFailure,
-          required final KtList<AllCountryData> allCountryDataList,
-          required final KtList<AllCountryData> allCountryDataNonSortList}) =
-      _$GetAllCountryDataStateImpl;
+      {required final bool isLoading,
+      required final int value,
+      required final Option<Failure> responseFailure,
+      required final KtList<Data> outPutList}) = _$GetAllCountryDataStateImpl;
 
   @override
   bool get isLoading;
   @override
-  String get sortBy;
-  @override
-  double get heigth;
-  @override
-  bool get isClickTouch;
-  @override
-  bool get isSort;
-  @override
-  int get selectOption;
+  int get value;
   @override
   Option<Failure> get responseFailure;
   @override
-  KtList<AllCountryData> get allCountryDataList;
-  @override
-  KtList<AllCountryData> get allCountryDataNonSortList;
+  KtList<Data> get outPutList;
   @override
   @JsonKey(ignore: true)
   _$$GetAllCountryDataStateImplCopyWith<_$GetAllCountryDataStateImpl>

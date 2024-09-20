@@ -9,5 +9,5 @@ mixin Config {
 
   static int get apiTimeout => 40000;
 
-  static String serverUrl = "https://restcountries.com/";
+  static String serverUrl = "http://192.168.8.135:4000/";
 }

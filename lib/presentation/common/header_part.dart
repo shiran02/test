@@ -22,12 +22,6 @@ class HeaderPart extends StatelessWidget {
             child: Container(
               height: h * 0.15,
               color: AColors.primaryBlueColor,
-              child: Center(
-                child: Image.asset(
-                  'assets/images/home_logo.png',
-                  scale: 3,
-                ),
-              ),
             ),
           ),
         ],

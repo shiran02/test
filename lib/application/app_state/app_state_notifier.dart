@@ -1,6 +1,5 @@
 import 'package:countryinfo/application/app_state/app_state.dart';
 import 'package:countryinfo/domain/core/i_local_repository.dart';
-import 'package:countryinfo/util/app_utils.dart';
 import 'package:countryinfo/util/log_util/log_utils.dart';
 import 'package:countryinfo/util/string_extensions.dart';
 import 'package:dartz/dartz.dart';
