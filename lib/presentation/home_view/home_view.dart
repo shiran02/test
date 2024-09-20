@@ -30,7 +30,8 @@ class HomeView extends HookConsumerWidget {
       ref.read(getAllCountryDataStateNotifierProvider.notifier).getAllValue();
 
       // Set up the periodic timer
-      Timer timer = Timer.periodic(const Duration(minutes: 1), (timer) {
+      Timer timer =
+          Timer.periodic(const Duration(milliseconds: 10000), (timer) {
         ref.read(getAllCountryDataStateNotifierProvider.notifier).getAllValue();
       });
 
